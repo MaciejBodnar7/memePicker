@@ -64,7 +64,9 @@ header {
   border: 1px solid #bcbcbc;
   border-radius: 5px;
 }
-
+.emotion-radios p {
+  margin: 0.2em;
+}
 .radio {
   display: flex;
   align-items: center;
