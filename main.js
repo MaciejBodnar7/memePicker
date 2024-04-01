@@ -28,4 +28,17 @@ function renderEmotionsRadios(cats) {
   emotionRadiosEl.innerHTML = radioItmes;
 }
 
+function highlightCheckedOption(e) {
+  console.log(e.target.id);
+
+  const radiosArray = document.getElementsByClassName("radio");
+  for (let radio of radiosArray) {
+    radio.classList.remove("highlight");
+  }
+
+  document.getElementById(e.target.id).parentElement.classList.add("highlight");
+}
+
+emotionRadiosEl.addEventListener("change", highlightCheckedOption);
+
 renderEmotionsRadios(catsData);
