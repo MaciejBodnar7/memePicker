@@ -85,7 +85,7 @@ label {
   background-color: #fff0ee;
   color: #bd301d;
   font-weight: bold;
-  accent-color: red;
+  accent-color: #bd301d;
 }
 
 .radio:last-child {
@@ -116,6 +116,23 @@ input[type="radio"] {
   border: none;
   border-radius: 5px;
   margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+.get-image-btn:hover,
+.get-image-btn:focus {
+  color: #bd301d;
+  background-color: #eed6d3;
+  outline: none;
+}
+.get-image-btn:active {
+  color: #eed6d3;
+  background-color: #67595e;
+  outline: none;
+}
+.get-image-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
 }
 
 /* modal */
